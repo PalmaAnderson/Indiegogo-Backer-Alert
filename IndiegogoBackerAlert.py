@@ -14,7 +14,7 @@ from pprint import pprint
 import winsound
 import time
 
-CAMPAIGN_ID=#your id here, this is the only line you need to modify to run this code with python 3
+CAMPAIGN_ID=1757572#your id here, this is the only line you need to modify to run this code with python 3
 oldFunds=0
 url='https://api.indiegogo.com/private_api/campaigns/'+ str(CAMPAIGN_ID) +'/funds.json'
 def getStatus():
@@ -22,7 +22,7 @@ def getStatus():
     resp=urllib.request.urlopen(url).read()
     data=json.loads(resp.decode('utf-8'))
     
-    # Use this to look in the json for more data
+    # uncomment to print JSON detailed data
     #pprint (data)
     
     funds=data['response']['collected_funds']
@@ -47,12 +47,13 @@ while (1):
     if (oldFunds < funds):
         # Main action if the collected amount changes
         # Like sending serial data do arduino play buzzer
-        print ("CONGRATULATIONS! We got a new backer, new amount:",funds)
+        newAmount = funds - oldFunds
+        print ("CONGRATULATIONS! We got a new backer, new total:",funds, "| Added amount",newAmount)
         playSound();
         
     else:
         # If the amount still the same
-        print ("raised so far:",funds)
+        print ("Raised so far:",funds)
 
     
     oldFunds=funds
