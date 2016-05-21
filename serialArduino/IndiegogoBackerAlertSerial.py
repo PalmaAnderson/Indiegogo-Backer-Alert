@@ -4,27 +4,26 @@ https://www.facebook.com/palma.anderson
 if you use this code, you must:
 1 keep it free
 2 keep this notice
-
 '''
 #this is my firt open source code, feel free to help with any tip
 
-import urllib.request
+import requests	
 import json
 from pprint import pprint
 import time
 import serial
 
 #change COM4 to match your arduino serial port
-ser = serial.Serial('COM3', 9600)
+ser = serial.Serial('/dev/ttyACM0', 9600)
 #your id here, this is the only line you need to modify to run this code with python 3
 CAMPAIGN_ID=1757572
 url='https://api.indiegogo.com/private_api/campaigns/'+ str(CAMPAIGN_ID) +'/funds.json'
-
+oldFunds=0
 
 def getStatus():
     
-    resp=urllib.request.urlopen(url).read()
-    data=json.loads(resp.decode('utf-8'))
+    resp=requests.get(url)
+    data=json.loads(resp.text)
     
     # uncomment next line to print JSON detailed data
     #pprint (data)
@@ -36,10 +35,9 @@ def getStatus():
 
 def sendSignal():
     
-    ser.write(b'A')
+    ser.write('A')
 
-oldFunds=0
-#oldFunds, contributions = getStatus()     
+ 
 while (1):
     
     funds, contributions = getStatus()
@@ -59,7 +57,4 @@ while (1):
     oldFunds = funds
     
     #refreshs 4 times a minute
-    time.sleep( 15 )
-    
-        
-
+    time.sleep( 60 )
