@@ -8,12 +8,15 @@
 <br>
 
 ####Files:
-<p>**IndiegogoBackerAlertWindows.py** (Windows with beep)
-<p>serialArduino/**IndiegogoBackerAlertLinuxSerial.py** (Linux with Serial support)
-<p>serialArduino/**IndiegogoBackerAlertWindowsSerial.py** (Windows with Serial support)
-<p>serialArduino/**serialArduino.ino** (sample arduino code)
-<p>Coming soon: linux with beep
-<br>
+<p>
+| file                          | Function                                               |
+|-------------------------------|--------------------------------------------------------|
+| Windows with beep           | IndiegogoBackerAlert**Windows**.py                     |
+| Windows with Serial support | serialArduino/IndiegogoBackerAlert**WindowsSerial**.py |
+| linux with beep           | coming soon                                            |
+| Linux with Serial support   | serialArduino/IndiegogoBackerAlert**LinuxSerial**.py   |
+| sample **arduino** code     | serialArduino/serialArduino.ino                        |
+
 
 ####How do I install and set this up?
 <br>1 - download python
@@ -28,12 +31,3 @@ we**UseCamelCase** and **no_undercore** for variables
 <p>No import other than **defaut python instalation** or pySerial
 <p>**#** Lots of comments, understand whats happening and edit the code even if you dont understand python
 <br>
-<p>
-
-| file                          | Function                                               |
-|-------------------------------|--------------------------------------------------------|
-| (Windows with beep)           | **IndiegogoBackerAlertWindows**.py                     |
-| (Windows with beep)           | coming soon                                            |
-| (Linux with Serial support)   | serialArduino/**IndiegogoBackerAlertLinuxSerial**.py   |
-| (Windows with Serial support) | serialArduino/**IndiegogoBackerAlertWindowsSerial**.py |
-| (sample **arduino** code)     | serialArduino/serialArduino.ino                        |
