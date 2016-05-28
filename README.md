@@ -28,3 +28,12 @@ we**UseCamelCase** and **no_undercore** for variables
 <p>No import other than **defaut python instalation** or pySerial
 <p>**#** Lots of comments, understand whats happening and edit the code even if you dont understand python
 <br>
+<p>
+
+| file                          | Function                                               |
+|-------------------------------|--------------------------------------------------------|
+| (Windows with beep)           | **IndiegogoBackerAlertWindows**.py                     |
+| (Windows with beep)           | coming soon                                            |
+| (Linux with Serial support)   | serialArduino/**IndiegogoBackerAlertLinuxSerial**.py   |
+| (Windows with Serial support) | serialArduino/**IndiegogoBackerAlertWindowsSerial**.py |
+| (sample **arduino** code)     | serialArduino/serialArduino.ino                        |
