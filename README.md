@@ -16,7 +16,7 @@
 | Linux with Serial support   | serialArduino/IndiegogoBackerAlert**LinuxSerial**.py   |
 | Windows with Serial support | serialArduino/IndiegogoBackerAlert**WindowsSerial**.py |
 | sample **arduino** code     | serialArduino/serialArduino.ino                        |
-
+<p>
 
 ####How do I install and set this up?
 <br>1 - download python
