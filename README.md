@@ -9,12 +9,12 @@
 
 ####Files:
 <p>
-| file                          | Function                                               |
-|-------------------------------|--------------------------------------------------------|
+| file                        | Function                                               |
+|-----------------------------|--------------------------------------------------------|
 | Windows with beep           | IndiegogoBackerAlert**Windows**.py                     |
-| Windows with Serial support | serialArduino/IndiegogoBackerAlert**WindowsSerial**.py |
-| linux with beep           | coming soon                                            |
+| Windows with beep           | coming soon                                            |
 | Linux with Serial support   | serialArduino/IndiegogoBackerAlert**LinuxSerial**.py   |
+| Windows with Serial support | serialArduino/IndiegogoBackerAlert**WindowsSerial**.py |
 | sample **arduino** code     | serialArduino/serialArduino.ino                        |
 
 
