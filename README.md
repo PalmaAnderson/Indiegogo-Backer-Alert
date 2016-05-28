@@ -8,18 +8,15 @@
 <br>
 
 ####Files:
-<p>
-| file                        | Function                                               |
+| File                        | Function                                               |
 |-----------------------------|--------------------------------------------------------|
 | Windows with beep           | IndiegogoBackerAlert**Windows**.py                     |
-| Windows with beep           | coming soon                                            |
-| Linux with Serial support   | serialArduino/IndiegogoBackerAlert**LinuxSerial**.py   |
 | Windows with Serial support | serialArduino/IndiegogoBackerAlert**WindowsSerial**.py |
-| sample **arduino** code     | serialArduino/serialArduino.ino                        |
-<p>
-
+| Linux with beep             | coming soon                                            |
+| Linux with Serial support   | serialArduino/IndiegogoBackerAlert**LinuxSerial**.py   |
+| Sample **arduino** code     | serialArduino/serialArduino.ino                        |
 ####How do I install and set this up?
-<br>1 - download python
+1 - download python
 <br>2 - install/run pip to get pySerial module (IndiegogoBackerAlertWindows.py doesn't need this step)
 <br>3 - beetween line 20~25 find **CAMPAIGN_ID=1757572** and replace with your onw ID (coming soon a tutorial for it)
 <br>4 - RUN!
